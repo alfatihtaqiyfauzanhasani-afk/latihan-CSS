@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    margin-bottom:20px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+main{
+    display:flex;
+    gap:20px;
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.content{
+    flex:3;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+aside{
+    flex:1;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#1565c0;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:15px 0;
+}
+
+table{
+    width:100%;
+}
+
+table td,
+table th{
+    padding:8px;
+    text-align:left;
+}
+
+footer{
+    background:#1565c0;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media screen and (max-width:768px){
+
+    main{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+}
